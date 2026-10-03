@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.db
+.venv/
+venv/
+.env
+**/.ipynb_checkpoints/
+dashboard/app_*_backup.py
+dashboard/app_backup_*.py
+*_backup.py
