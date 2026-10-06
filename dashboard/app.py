@@ -503,7 +503,7 @@ elif page == "Route Planner":
     if st.button(
         "⚡ Find Optimal Route",
         type="primary",
-        use_container_width=True,
+        width="stretch",
     ):
 
         if route_source == route_destination:
@@ -879,7 +879,7 @@ elif page == "Route Planner":
 
                 st.dataframe(
                     leg_rows,
-                    use_container_width=True,
+                    width="stretch",
                     hide_index=True,
                 )
 
@@ -1364,7 +1364,7 @@ elif page == "Route Planner":
 
             st.dataframe(
                 segment_rows,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 
@@ -1854,7 +1854,7 @@ elif page == "Route Planner":
 
             st.dataframe(
                 scenario_rows,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 
@@ -2100,7 +2100,7 @@ elif page == "Route Planner":
             },
             {
                 "Cost Component": "Total",
-                "Basis": "—",
+                "Basis": None,
                 "Rate": "—",
                 "Estimated Cost": round(
                     primary_cost["total_cost"],
@@ -2111,7 +2111,7 @@ elif page == "Route Planner":
 
         st.dataframe(
             primary_cost_rows,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -2222,7 +2222,7 @@ elif page == "Route Planner":
 
             st.dataframe(
                 cost_comparison_rows,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 
@@ -2555,7 +2555,7 @@ elif page == "Route Planner":
 
         st.dataframe(
             score_rows,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -2595,7 +2595,7 @@ elif page == "Route Planner":
 
         st.dataframe(
             criterion_rows,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -2789,7 +2789,7 @@ elif page == "Route Planner":
 
         st.dataframe(
             decision_rows,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -3029,7 +3029,7 @@ elif page == "Network Intelligence":
 
         st.dataframe(
             top_connected_rows,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
@@ -3084,7 +3084,7 @@ elif page == "Network Intelligence":
 
             st.plotly_chart(
                 network_figure,
-                use_container_width=True,
+                width="stretch",
             )
 
         except Exception as exc:
@@ -3146,7 +3146,7 @@ elif page == "Algorithm Analytics":
     if st.button(
         "Run A* vs Dijkstra Analysis",
         type="primary",
-        use_container_width=True,
+        width="stretch",
     ):
 
         if (
@@ -3363,7 +3363,7 @@ elif page == "Optimization":
 
         st.dataframe(
             optimization_rows,
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 

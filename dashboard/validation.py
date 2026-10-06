@@ -120,7 +120,7 @@ def render_system_validation(
         validation_df[
             ["Check", "Result", "Evidence"]
         ],
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -184,7 +184,7 @@ def render_system_validation(
 
     st.dataframe(
         workflow_rows,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 

@@ -4,7 +4,7 @@ services:
     container_name: logistics-api
     command: python -m uvicorn logistics_engine.api.app:api_app --host 0.0.0.0 --port 8000
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     volumes:
       - ../logistics_routing.db:/app/logistics_routing.db
 
@@ -13,7 +13,7 @@ services:
     container_name: logistics-dashboard
     command: python -m streamlit run logistics_engine/dashboard/app.py --server.address=0.0.0.0 --server.port=8501
     ports:
-      - "8501:8501"
+      - "127.0.0.1:8501:8501"
     volumes:
       - ../logistics_routing.db:/app/logistics_routing.db
     depends_on:
